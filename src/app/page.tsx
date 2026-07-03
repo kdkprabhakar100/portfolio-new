@@ -1,6 +1,6 @@
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
-import { ProjectPreview } from "@/components/ProjectPreview";
+import { ProjectShowcase } from "@/components/ProjectShowcase" ;
 import { SystemLoader } from "@/components/SystemLoader";
 
 export default function Home() {
@@ -9,7 +9,11 @@ export default function Home() {
       <SystemLoader />
       <Navbar />
       <Hero />
-      <ProjectPreview />
+      <ProjectShowcase />
+      <section id="about" className="next-section-placeholder">
+        <p className="section-kicker">NEXT PHASE</p>
+        <h2>The journey timeline starts here.</h2>
+      </section>
     </main>
   );
 }
