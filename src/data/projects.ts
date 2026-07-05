@@ -26,23 +26,25 @@ export const projects: Project[] = [
   {
     number: "02",
     title: "FitGenius",
-    eyebrow: "Fitness experience",
+    eyebrow: "Fitness application",
     description:
-      "A focused fitness product designed around workout guidance, useful progress information and an interface that keeps the user moving forward.",
+      "A multi-part fitness product designed around workout guidance, useful progress information and a more motivating health journey.",
     result:
-      "A clearer and more motivating experience for planning and tracking fitness activity.",
-    stack: ["Next.js", "Express", "MongoDB", "Charts", "REST API"],
+      "A structured application bringing frontend, backend and mobile-oriented fitness features into one project.",
+    stack: ["JavaScript", "Node.js", "Java", "Python", "REST API"],
+    github: "https://github.com/kdkprabhakar100/FitGenius",
     visual: "fitness",
   },
   {
     number: "03",
     title: "WasteGuard",
-    eyebrow: "Smart operations dashboard",
+    eyebrow: "Waste-management system",
     description:
-      "A waste-management interface that turns reporting, status monitoring and operational information into a visual system that is easier to understand.",
+      "A Java-based waste-management project focused on organizing core data and operational workflows into a more structured system.",
     result:
-      "Faster access to meaningful operational information and clearer reporting workflows.",
-    stack: ["React", "Firebase", "GSAP", "Analytics", "Responsive UI"],
+      "A practical engineering project exploring how software can support cleaner and more organized operations.",
+    stack: ["Java", "Data Models", "System Design", "Operations"],
+    github: "https://github.com/kdkprabhakar100/WasteGuard",
     visual: "waste",
   },
 ];

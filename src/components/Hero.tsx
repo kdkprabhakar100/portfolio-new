@@ -5,6 +5,8 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ArrowDown, ArrowUpRight, Mail } from "lucide-react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { site } from "@/data/site";
+
 const GlobeScene = dynamic(() => import("./GlobeScene"), {
   ssr: false,
   loading: () => <div className="globe-placeholder" />,
@@ -87,7 +89,7 @@ export function Hero() {
           </a>
         </div>
 
-        <a className="hero-scroll" href="#projects">
+        <a className="hero-scroll" href="#about">
           <span className="scroll-icon">
             <ArrowDown size={15} />
           </span>
@@ -104,17 +106,17 @@ export function Hero() {
 
       <aside className="social-rail" aria-label="Social links">
         <a
-          href="https://github.com/kdkprabhakar100"
+          href={site.github}
           target="_blank"
           rel="noreferrer"
           aria-label="GitHub"
         >
           <FaGithub size={19} />
         </a>
-        <a href="https://linkedin.com/in/kdkprabhakar100" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+        <a href={site.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn">
           <FaLinkedinIn size={19} />
         </a>
-        <a href="mailto:hello@khadkaprabhakar.com.np" aria-label="Email">
+        <a href={`mailto:${site.email}`} aria-label="Email">
           <Mail size={19} />
         </a>
         <span className="social-line" />
